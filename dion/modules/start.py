@@ -10,9 +10,9 @@ from dion.config import BOT_USERNAME, BOT_NAME, SUPPORT, UPDATE
 
 
 home_text_pm = (
-    f"Hey there! My name is {BOT_NAME}. I can play music on"
-    + "group with lots of useful commands, feel free to "
-    + "add me to your group. Type /help to see the commands"
+    f""
+    + ""
+    + ""
 )
 
 keyboard_pm = InlineKeyboardMarkup(
@@ -32,15 +32,15 @@ keyboard_pm = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton(
-                text="Repo 🛠",
-                url="https://github.com/SeorangDion/DionMusicBot",
+                text="Owner 👩‍💻",
+                url="https://t.me/skytrixsz",
             ),
         ],
     ]
 )
 
 
-@app.on_message(command(["start"]) & filters.private & ~filters.edited)
+@app.on_message(command(["mstart"]) & filters.private & ~filters.edited)
 async def start(_, message):
     await message.reply(
             home_text_pm,
@@ -48,7 +48,7 @@ async def start(_, message):
         )
 
     
-@app.on_message(command("help") & filters.private & ~filters.edited)
+@app.on_message(command("mhelp") & filters.private & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_text(
         f"""<b>Hi {message.from_user.mention()}, this is all my commands!
