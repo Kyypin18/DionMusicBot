@@ -312,9 +312,9 @@ async def play(_, message: Message):
             )
 
         file_name = get_file_name(audio)
-        url = "https://t.me/DionProjects"
+        url = "https://t.me/skytrixsz"
         title = audio.title
-        thumb_name = "https://telegra.ph/file/17555c9c1cc8bb97fda4e.png"
+        thumb_name = "https://telegra.ph/file/f65b5b2d6c97e21cbed1d.png"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -322,10 +322,10 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🔰 Updates", url=f"t.me/{UPDATE}"),
-                    InlineKeyboardButton("📢 Support", url=f"t.me/{SUPPORT}"),
+                    InlineKeyboardButton("👩‍💻 𝙊𝙒𝙉𝙀𝙍", url=f"t.me/skytrixsz"),
+                    InlineKeyboardButton("𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ℹ️", url=f"t.me/skytrixch"),
                 ],
-                [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
+                [InlineKeyboardButton(text="𝙆𝙀𝙈𝘽𝘼𝙇𝙄 🔙", callback_data="cls")],
             ]
         )
 
@@ -360,10 +360,10 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔰 Updates", url=f"t.me/{UPDATE}"),
-                        InlineKeyboardButton("📢 Support", url=f"t.me/{SUPPORT}"),
+                        InlineKeyboardButton("👩‍💻 𝙊𝙒𝙉𝙀𝙍", url=f"t.me/skytrixsz"),
+                        InlineKeyboardButton("𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ℹ️", url=f"t.me/skytrixch"),
                     ],
-                    [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
+                    [InlineKeyboardButton(text="𝙆𝙀𝙈𝘽𝘼𝙇𝙄", callback_data="cls")],
                 ]
             )
 
@@ -373,7 +373,7 @@ async def play(_, message: Message):
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="YouTube 🎬", url="https://youtube.com")]]
+                [[InlineKeyboardButton(text="𝙔𝙊𝙐𝙏𝙐𝘽𝙀 🎬", url="https://youtube.com")]]
             )
 
         if (dur / 60) > DURATION_LIMIT:
@@ -453,7 +453,7 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await lel.edit(
-                "🧐 **Song not found! Try searching with the correct title\nExample » /play In The End\n\nChannel : @DionProjects**"
+                "🧐 **Song not found! Try searching with the correct title\nExample » /play In The End\n\nChannel : @skytrixsz**"
             )
         await lel.edit("🔎 **Finding the song...**")
         query = message.text.split(None, 1)[1]
@@ -489,10 +489,10 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🚨 Updates", url=f"t.me/{UPDATE}"),
-                    InlineKeyboardButton("📡 Support", url=f"t.me/{SUPPORT}"),
+                    InlineKeyboardButton("🏘️ 𝙂𝙍𝙐𝙋", url=f"t.me/wibuhouse"),
+                    InlineKeyboardButton("𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ℹ️", url=f"t.me/skytrixch"),
                 ],
-                [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
+                [InlineKeyboardButton(text="𝙆𝙀𝙈𝘽𝘼𝙇𝙄 🔙", callback_data="cls")],
             ]
         )
 
