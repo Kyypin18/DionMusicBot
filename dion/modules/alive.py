@@ -17,7 +17,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 
 
-DION_IMG = "https://telegra.ph/file/145e09a0377e17adff6fb.jpg"
+DION_IMG = "https://telegra.ph/file/f65b5b2d6c97e21cbed1d.jpg"
 
 
 @app.on_message(filters.command(["malive", f"malive@{BOT_USERNAME}"]))
@@ -34,10 +34,10 @@ async def alive(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "ᴜᴘᴅᴀᴛᴇs", url=f"t.me/{UPDATE}"
+                        "ᴜᴘᴅᴀᴛᴇs", url=f"t.me/skytrixch"
                     ),
                     InlineKeyboardButton(
-                        "sᴜᴘᴘᴏʀᴛ", url=f"t.me/{SUPPORT}"
+                        "sᴜᴘᴘᴏʀᴛ", url=f"t.me/wibuhouse"
                     )
                 ]
             ]
